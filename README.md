@@ -28,4 +28,4 @@
        - Now you can run symfony application using http://symphart.test.<br>
        - Lastly, you have to add .htaccess file inside public folder and write general htaccess code.
        
-  <b>Notes:</b> You can check code for palindrome, anagram and pangram inside src/controller/CheckController file.     
+  <b>Notes:</b> You can check code for palindrome, anagram and pangram inside src/controller/CheckerController.php file.     
