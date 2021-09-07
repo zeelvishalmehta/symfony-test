@@ -19,7 +19,7 @@ class CheckerController
      */
     public function isPalindrome($word = '' ) : bool
     {
-		$string = str_replace(' ', '', $word);
+	$string = str_replace(' ', '', $word);
 
     	//remove special characters
     	$string = preg_replace('/[^A-Za-z0-9\-]/', '', $string);
@@ -37,7 +37,8 @@ class CheckerController
 	return false;	
     }
     /**
-     * @Route("/checker", name="checker")
+     * @Route("/")
+     * @Method({"GET"})
      */
     /**
      * An anagram is the result of rearranging the letters of a word or phrase 
@@ -71,7 +72,8 @@ class CheckerController
         return false;
     }
     /**
-     * @Route("/checker", name="checker")
+     * @Route("/")
+     * @Method({"GET"})
      */
     /**
      * A Pangram for a given alphabet is a sentence using every letter of the 
@@ -82,9 +84,9 @@ class CheckerController
      */    
     public function isPangram(string $phrase) : bool
     {
-		$alphabet = array('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z');      
+	$alphabet = array('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z');      
 		
-		$isPangram = false;
+	$isPangram = false;
 
          $array = str_split($phrase);             
 
@@ -117,26 +119,33 @@ class CheckerController
 
 }
 $checker_controller = new CheckerController;
-$palindromes = array('anna', 'bark');
-echo '<b>1) Palindrome Function Output:</b><br>';
+$palindromes = array('anna', 'Bark');
+echo '<b><u> Palindrome Function Output:</u></b><br>';
 foreach ($palindromes as $palindrome) {
-    echo $palindrome.': ';
+    echo '<font color=red><b>'.$palindrome.' </b></font>';
     var_dump($checker_controller->isPalindrome($palindrome));
  	echo "<br>";
 }
 echo "<br>";
 $anagram_word = 'coalface';
 $anagram_comparison = 'cacao elf';
-echo "<b>2) Anagram Function Output:</b><br>";
-echo $anagram_word.', '.$anagram_comparison;
+echo "<b><u> Anagram Function Output:</u></b><br>";
+echo '<font color=red><b>'.$anagram_word.', '.$anagram_comparison.'</b></font> ';
 var_dump($checker_controller->isAnagram($anagram_word,$anagram_comparison));
-echo "<br>";
 
 echo "<br>";
+$anagram_word1 = 'coalface';
+$anagram_comparison1 = 'dark elf';
+echo '<font color=red><b>'.$anagram_word1.', '.$anagram_comparison1.'</b></font> ';
+var_dump($checker_controller->isAnagram($anagram_word1,$anagram_comparison1));
+
+
+echo "<br>";
+echo "<br>";
 $pangrams = array('The quick brown fox jumps over the lazy dog', 'The British Broadcasting Corporation (BBC) is a British public service broadcaster.');
-echo '<b>3) Pangram Function Output:</b><br>';
+echo '<b><u> Pangram Function Output:</u></b><br>';
 foreach ($pangrams as $pangram) {
-    echo $pangram.': ';
+    echo '<font color=red><b>'.$pangram.'.</b></font>  ';
     var_dump($checker_controller->isPangram($pangram));
 	 echo "<br>";
 }
