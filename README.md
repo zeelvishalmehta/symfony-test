@@ -19,14 +19,14 @@
             <VirtualHost *:80> <br>
             DocumentRoot "C:/xampp/htdocs/symphart/public" <br>
             ServerName symphart.test <br>
-           </VirtualHost>
-      - Edit the host file. <br>
-            1) open notepad file and run as administrator.<br>            
-            2) open the host file and make the following changes at the end of file.<br>
-                   127.0.0.1 symphart.test<br>
-       - Restart apache server.<br>      
-       - Now you can run symfony application using your servername that assign in virtual host file (eg:http://servername).<br>
-       - Lastly, you have to add .htaccess file inside public folder and write general htaccess code.
+            </VirtualHost>
+            - Edit the host file. <br>
+              1) open notepad file and run as administrator.<br>            
+              2) open the host file and make the following changes at the end of file.<br>
+                 127.0.0.1 symphart.test<br>
+       6) Restart apache server.<br>      
+       7) Now you can run symfony application using your servername that assign in virtual host file (eg:http://servername).<br>
+       8) Lastly, you have to add .htaccess file inside public folder and write general htaccess code.
        
   <b>Notes:</b> There is a below github url for reviewing the code for palindrome, anagram and pangram.<br>
                 •	https://github.com/zeelvishalmehta/symfony-test/blob/main/src/Controller/CheckerController.php
