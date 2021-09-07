@@ -1,4 +1,4 @@
-# symfony-test
+# symfony and PHP Exercise
  Code for Palindrome, Anagram and Pangram
  
 <b>Technical Requirements</b><br><br>
@@ -12,7 +12,7 @@
       1) Go to xampp/htdocs.
       2) Right click on htdocs open Gitbash cmd
       3) Using composer, create a new symfony project          
-            - composer create-project symfony/skeleton symphart 
+            - composer create-project symfony/skeleton symfony-project-name (eg:symphart) 
       4) You can open symfony application using localhost://symphart/public. But we can run through virtual host.     
       5) Setup a virtual host     
             - Go to xampp/apache/conf/extra/httpd-vhosts     
