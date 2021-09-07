@@ -13,7 +13,7 @@
       3) Using composer create symfony project: <br>           
             - composer create-project symfony/skeleton symphart<br> 
       4) You can open symfony application using localhost://symphart/public. But we can run through virtual host.     
-      4) Setup a virtual host<br>     
+      5) Setup a virtual host<br>     
             - Go to xampp/apache/conf/extra/httpd-vhosts<br>     
             - At the end of file, httpd-vhosts make the following changes.<br> 
           <VirtualHost *:80><br>
@@ -25,7 +25,7 @@
             2) open the host file and make the following changes at the end of file.<br>
                    127.0.0.1 symphart.test<br>
        - Restart apache server.<br>      
-       - Now you can run symfony application using http://servername(assign in virtual host file).<br>
+       - Now you can run symfony application using your servername that assign in virtual host file (eg:http://servername).<br>
        - Lastly, you have to add .htaccess file inside public folder and write general htaccess code.
        
   <b>Notes:</b> You can check code for palindrome, anagram and pangram inside src/controller/CheckerController.php file.     
