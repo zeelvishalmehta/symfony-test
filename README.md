@@ -20,12 +20,11 @@
               DocumentRoot "C:/xampp/htdocs/symphart/public" <br>
               ServerName symphart.test <br>
               </VirtualHost>
+              
             - Edit the host file.<br>
-            
                  a) open notepad file and run as administrator.           
                  b) open the host file and make the following changes at the end of file.
                     127.0.0.1 symphart.test
-                    
        6) Restart apache server.<br>      
        7) Now you can run symfony application using your servername that assign in virtual host file (eg:http://servername).<br>
        8) Lastly, you have to add .htaccess file inside public folder and write general htaccess code.
