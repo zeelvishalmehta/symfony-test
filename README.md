@@ -7,19 +7,18 @@
     - Download Symfony using (https://symfony.com/download). This creates a binary called symfony that provides all the tools you need to develop and run your Symfony application locally.<br><br>
     
  <b>Installation</b><br>
- 
       1) Go to xampp/htdocs.
       2) Right click on htdocs open Gitbash cmd
       3) Using composer, create a new symfony project
             - composer create-project symfony/skeleton symphart
       4) You can open symfony application using localhost://symphart/public. But we can run through virtual host.     
       5) Setup a virtual host
-      
             - Go to xampp/apache/conf/extra/httpd-vhosts
             - At the end of  httpd-vhosts file make the following changes.
               <VirtualHost *:80> <br>
               DocumentRoot "C:/xampp/htdocs/symphart/public" <br>
-              ServerName symphart.test </VirtualHost><br>
+              ServerName symphart.test 
+              <VirtualHost *:80> <br>
             - Edit the host file.<br>
                  a) open notepad file and run as administrator.<br>           
                  b) open the host file and make the following changes at the end of file.<br>
