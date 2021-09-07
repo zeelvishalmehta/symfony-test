@@ -28,4 +28,6 @@
        - Now you can run symfony application using your servername that assign in virtual host file (eg:http://servername).<br>
        - Lastly, you have to add .htaccess file inside public folder and write general htaccess code.
        
-  <b>Notes:</b> You can check code for palindrome, anagram and pangram inside src/controller/CheckerController.php file.     
+  <b>Notes:</b> There is a below github url for reviewing the code for palindrome, anagram and pangram.
+                •	https://github.com/zeelvishalmehta/symfony-test/blob/main/src/Controller/CheckerController.php
+    
