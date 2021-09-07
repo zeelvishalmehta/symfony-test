@@ -8,19 +8,19 @@
     
  <b>Installation</b><br>
  
-      1) Go to xampp/htdocs.<br>
-      2) Right click on htdocs open Gitbash cmd<br>
-      3) Using composer, create a new symfony project <br>           
-            - composer create-project symfony/skeleton symphart<br> 
+      1) Go to xampp/htdocs.
+      2) Right click on htdocs open Gitbash cmd
+      3) Using composer, create a new symfony project
+            - composer create-project symfony/skeleton symphart
       4) You can open symfony application using localhost://symphart/public. But we can run through virtual host.     
-      5) Setup a virtual host<br>     
-            - Go to xampp/apache/conf/extra/httpd-vhosts<br>     
-            - At the end of  httpd-vhosts file make the following changes.<br> 
-          <VirtualHost *:80><br>
-            DocumentRoot "C:/xampp/htdocs/symphart/public"<br>
-            ServerName symphart.test<br>
-           </VirtualHost><br>
-      - Edit the host file.<br>            
+      5) Setup a virtual host
+            - Go to xampp/apache/conf/extra/httpd-vhosts
+            - At the end of  httpd-vhosts file make the following changes.
+          <VirtualHost *:80>
+            DocumentRoot "C:/xampp/htdocs/symphart/public"
+            ServerName symphart.test
+           </VirtualHost>
+      - Edit the host file.
             1) open notepad file and run as administrator.<br>            
             2) open the host file and make the following changes at the end of file.<br>
                    127.0.0.1 symphart.test<br>
