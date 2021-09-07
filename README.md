@@ -21,8 +21,8 @@
               ServerName symphart.test <br>
               </VirtualHost><br>
             - Edit the host file.<br>
-                 1) open notepad file and run as administrator.<br>            
-                 2) open the host file and make the following changes at the end of file.<br>
+                 a) open notepad file and run as administrator.<br>            
+                 b) open the host file and make the following changes at the end of file.<br>
                     127.0.0.1 symphart.test<br>
        6) Restart apache server.<br>      
        7) Now you can run symfony application using your servername that assign in virtual host file (eg:http://servername).<br>
