@@ -19,10 +19,10 @@
               <VirtualHost *:80> <br>
               DocumentRoot "C:/xampp/htdocs/symphart/public" <br>
               ServerName symphart.test <br>
-              </VirtualHost>
+              </VirtualHost><br>
               
             - Edit the host file.<br>
-                 a) open notepad file and run as administrator.           
+                 a) open notepad file and run as administrator.<br>           
                  b) open the host file and make the following changes at the end of file.
                     127.0.0.1 symphart.test
        6) Restart apache server.<br>      
